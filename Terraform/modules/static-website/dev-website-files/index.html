@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AWS Serverless Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">My Awesome Serverless Site</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto mt-8 p-4">
+        <section class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to My Serverless Site</h2>
+            <p class="mb-4">This is a simple, static website built with HTML and Tailwind CSS, perfect for deploying on AWS serverless infrastructure.</p>
+            <p class="mb-4">Tailwind makes it easy to create responsive, good-looking designs without writing custom CSS.</p>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Learn More</a>
+        </section>
+
+        <section class="mt-8 grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Feature 2</h3>
+                <p>Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 My Awesome Serverless Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
