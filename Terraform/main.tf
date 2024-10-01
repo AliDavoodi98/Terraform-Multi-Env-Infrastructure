@@ -12,7 +12,7 @@ module "main_vpc_module" {
 module "dev_website_module" {
   source = "./modules/static-website"
 
-  bucket_name = "dev.terraform-multi-env.com"
+  bucket_name = var.subdomain_name
   bucket_tag_name = "Frontend Dev"
   bucket_tag_env = "Development"
   main_website_path = "./modules/static-website/dev-website-files/index.html"
@@ -22,8 +22,8 @@ module "dev_website_module" {
 module "route53" {
   source = "./modules/route53"
 
-  domain_name = "terraform-multi-env.com"
-  subdomain_name = "dev.terraform-multi-env.com" 
+  domain_name = var.domain_name
+  subdomain_name = var.subdomain_name
   s3_web_domain = module.dev_website_module.website_domain
   s3_web_hosted_zone = module.dev_website_module.website_hosted_zone_id
 }
