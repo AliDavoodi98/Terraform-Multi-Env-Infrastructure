@@ -1,0 +1,14 @@
+# Ignore Terraform state files
+Terraform/*.tfstate
+Terraform/*.tfstate.*
+
+# Ignore .terraform directory
+Terraform/.terraform/
+
+# Ignore lock files
+Terraform/.terraform.lock.hcl
+
+# Ignore terraform variable files 
+Terraform/terraform.tfvars
+
+Terraform/modules/dhcp-server/
