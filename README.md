@@ -3,6 +3,8 @@
 
 This repository contains Terraform configurations for deploying a multi-environment infrastructure on AWS. The project automates the deployment of development, staging, and production environments, including features like load balancing, auto-scaling, and secure secret management.
 
+![Diagram of AWS architecture](images/Untitled-Diagram.png)
+
 ## Project Overview
 This project sets up a cloud-based infrastructure using AWS and Terraform, focusing on:
 
