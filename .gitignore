@@ -11,4 +11,5 @@ Terraform/.terraform.lock.hcl
 # Ignore terraform variable files 
 Terraform/terraform.tfvars
 
+#ignore dhcp-server
 Terraform/modules/dhcp-server/
